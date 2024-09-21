@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <style>
+    :root{
+   --color: lavender;
+   --fontfamily: proza libre;
+  }
+  
+  body{
+     overflow: hidden;
+   position: relative;
+   margin: 0;
+   padding: 18px;
+   background:  no-repeat linear-gradient(#4C81A7,#5588AD,#6494B5,#729FBD,#7CA3BF,#84AAC5);
+   background-attachment: fixed;
+   background-size: cover;
+   
+  }
+  
+  .logoName{
+   opacity: 0.8;
+   margin: 0;
+   display: inline-block;
+   position: relative;
+   font-size: 30px;
+   color: white;
+   font-family: var(--fontfamily); 
+  }
+  .menuBar{
+   width:35px;
+   display: inline-block;
+   position: relative;
+   float: right;
+   opacity: 0.8;
+  }
+  #arrowup{
+   width:50px;
+   opacity: 0.8;
+   position: absolute;
+   top: 680px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   
+   transition: 1.2s;
+  }
+  #bottomContent{
+     margin: 18px;
+     border: 1px solid ;
+     display: inline-block;
+     position: absolute;
+     
+     
+     
+     
+  }
+  span{
+     font-family: sans-serif;
+     font-size: 30px;
+     color: dodgerblue;
+     font-weight: bolder;
+   display: inline-block;
+   position: relative;
+  }
+  #contentCtnr{
+     
+     border-radius: 20px 20px 0px 0px;
+     background: lavender;
+     margin: auto;
+     padding:0;
+     top: 75rem;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     overflow: hidden;
+     overflow: auto;
+     height: 600px;
+     min-width: 380px;
+     display: inline-block;
+     position: absolute;
+     
+     transition: 1.2s;
+  }
+ 
+ </style>
+ 
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+ 
+ <div id="mainCtnrBody">
+ <h1 class="logoName">ProteinZ</h1>
+ <img class="menuBar" src="/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+ </div>
+ 
+</head>
+
+<body>
+   
+ <img onclick="arrowUp(this)" id="arrowup" src="/keyboard_arrow_up_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png">
+ 
+
+<div  id="contentCtnr">
+   
+
+
+   <div id="bottomContent">
+       <span>What is protein and how do we need it to build muscle?</span> 
+   </div>
+</div>
+
+</body>
+
+
+
+<!-- JavaScript -->
+ <script>
+    function arrowUp(obj) {
+   document.getElementById("contentCtnr").style.top="580px";
+   obj.style.top="238px";
+   obj.style.rotate="179deg";
+}
+
+function yyy(obj) {
+   
+}
+ </script>
+<!-- JS -->
+</html>
